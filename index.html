@@ -1,16 +1,431 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vedanga Infratech - Steel Solutions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedanga Infratech | Steel Manufacturer &amp; JSW Distributor, Goa</title>
+  <meta name="description" content="Goa-based steel manufacturer and JSW Steel business associate — hollow sections, MS tubes, GP pipes, structural steel, plus JSW roofing and pipes distribution." />
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="canonical" href="https://www.vedangainfratech.in/" />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vedanga Infratech" />
+  <meta property="og:title" content="Vedanga Infratech | Steel Manufacturer &amp; JSW Distributor, Goa" />
+  <meta property="og:description" content="Goa-based steel manufacturer and JSW Steel business associate — hollow sections, MS tubes, GP pipes, structural steel, plus JSW roofing and pipes distribution." />
+  <meta property="og:url" content="https://www.vedangainfratech.in/" />
+  <meta property="og:image" content="https://www.vedangainfratech.in/assets/icons/logo-512.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vedanga Infratech | Steel Manufacturer &amp; JSW Distributor, Goa" />
+  <meta name="twitter:description" content="Goa-based steel manufacturer and JSW Steel business associate — hollow sections, MS tubes, GP pipes, structural steel, plus JSW roofing and pipes distribution." />
+  <meta name="twitter:image" content="https://www.vedangainfratech.in/assets/icons/logo-512.png" />
+
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+</head>
+<body class="font-sans text-body">
+
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-canvas border-b border-mute">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/icons/logo-192.png" alt="Vedanga Infratech logo" class="w-10 h-10 transition-transform group-hover:scale-105" />
+        <span class="font-display font-bold text-2xl text-ink tracking-tight uppercase">Vedanga Infratech</span>
+      </a>
+      <nav class="hidden md:flex gap-8">
+        <a href="index.html" class="text-sm font-medium transition-colors text-primary" aria-current="page">Home</a>
+        <a href="about.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">About Us</a>
+        <a href="businesses.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">Businesses</a>
+        <a href="contact.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">Contact Us</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2 text-ink" aria-label="Toggle menu" aria-expanded="false">
+        <i id="menu-icon-open" data-lucide="menu" class="w-6 h-6"></i>
+        <i id="menu-icon-close" data-lucide="x" class="w-6 h-6 hidden"></i>
+      </button>
+    </div>
+    <div id="mobile-nav" class="md:hidden absolute w-full bg-canvas border-t border-mute shadow-lg">
+      <nav class="flex flex-col p-4 gap-4">
+        <a href="index.html" class="text-primary font-medium px-2 py-1">Home</a>
+        <a href="about.html" class="text-ink font-medium px-2 py-1">About Us</a>
+        <a href="businesses.html" class="text-ink font-medium px-2 py-1">Businesses</a>
+        <a href="contact.html" class="text-ink font-medium px-2 py-1">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Hero -->
+    <section class="pt-8 pb-20 md:pt-10 md:pb-28 px-6 bg-canvas">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">
+            Building Strength. Delivering Trust.
+          </span>
+          <h1 class="text-5xl md:text-6xl font-bold text-ink leading-[1.1] mb-6 font-display tracking-tight">
+            Manufacturing Excellence. Steel Solutions. Trusted Distribution Partner.
+          </h1>
+          <p class="text-lg text-body-mid mb-8 max-w-lg leading-relaxed">
+            Vedanga Infratech is a leading steel solutions company based in Goa, specializing in the manufacturing, processing, and distribution of high-quality steel products. With over a decade of industry experience, the company has established itself as a reliable partner for infrastructure, industrial, commercial, and residential projects across Goa and neighboring regions.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-8">
+            <a href="contact.html" class="bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-sm inline-flex items-center gap-2">
+              Get a Quote <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
+            </a>
+            <a href="businesses.html" class="bg-canvas border-2 border-ink text-ink hover:bg-canvas-soft px-8 py-3.5 rounded-xl font-semibold transition-colors inline-block">
+              Explore Solutions
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-4 py-2 text-sm font-medium text-ink">
+              <i data-lucide="calendar-days" class="w-4 h-4 text-primary"></i> Est. 2012
+            </span>
+            <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-4 py-2 text-sm font-medium text-ink">
+              <i data-lucide="badge-check" class="w-4 h-4 text-primary"></i> JSW Business Associate
+            </span>
+            <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-4 py-2 text-sm font-medium text-ink">
+              <i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> Based in Goa, India
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-xl overflow-hidden shadow-2xl aspect-[4/3] bg-mute">
+          <img
+            src="assets/images/hero-home1.jpg"
+            alt="Arc welding at a steel construction site — Image by BalashMirzabey on Magnific"
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Associate band -->
+    <section class="py-16 bg-ink text-canvas text-center px-6">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-canvas-soft opacity-90 text-sm uppercase tracking-wider mb-3">Trusted Business Associate</p>
+        <div class="font-display font-bold text-4xl tracking-wider text-primary mb-12">JSW STEEL</div>
+        <div class="grid sm:grid-cols-3 gap-6 text-left">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+            <i data-lucide="factory" class="w-6 h-6 text-primary mb-3"></i>
+            <h3 class="font-semibold text-canvas mb-1">Manufacturing Partner</h3>
+            <p class="text-canvas-soft opacity-70 text-sm">for JSW Steel</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+            <i data-lucide="home" class="w-6 h-6 text-primary mb-3"></i>
+            <h3 class="font-semibold text-canvas mb-1">Distributor of</h3>
+            <p class="text-canvas-soft opacity-70 text-sm">JSW Roofing Sheets</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 fade-in">
+            <i data-lucide="wrench" class="w-6 h-6 text-primary mb-3"></i>
+            <h3 class="font-semibold text-canvas mb-1">Distributor of</h3>
+            <p class="text-canvas-soft opacity-70 text-sm">JSW Tubes &amp; Pipes for Goa Region</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats band (new, navy accent) -->
+    <section class="py-14 bg-navy text-canvas px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="fade-in">
+          <div class="text-4xl font-bold font-display mb-1">2012</div>
+          <div class="text-canvas-soft opacity-80 text-sm uppercase tracking-wide">Established</div>
+        </div>
+        <div class="fade-in">
+          <div class="text-4xl font-bold font-display mb-1">3</div>
+          <div class="text-canvas-soft opacity-80 text-sm uppercase tracking-wide">Core Business Verticals</div>
+        </div>
+        <div class="fade-in">
+          <div class="text-4xl font-bold font-display mb-1">JSW</div>
+          <div class="text-canvas-soft opacity-80 text-sm uppercase tracking-wide">Trusted Steel Partner</div>
+        </div>
+        <div class="fade-in">
+          <div class="text-4xl font-bold font-display mb-1">Goa</div>
+          <div class="text-canvas-soft opacity-80 text-sm uppercase tracking-wide">Proudly Serving the Region</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Businesses -->
+    <section class="pt-24 pb-20 px-6 bg-canvas">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">What We Do</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-ink mb-6 tracking-tight">Our Core Businesses</h2>
+          <p class="text-body-mid text-lg">Manufacturing, processing, and distribution — comprehensive steel solutions under one roof.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <a href="manufacturing.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
+            <div class="relative h-48 overflow-hidden bg-mute">
+              <img src="assets/images/manufacturing-home.jpg" alt="Industrial worker melting metal at a steel factory — Image by wirestock on Magnific" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="flex items-center gap-3 mb-4 text-ink">
+                <i data-lucide="factory" class="text-primary w-5 h-5"></i>
+                <h3 class="text-xl font-bold">Manufacturing</h3>
+              </div>
+              <p class="text-body mb-6 flex-grow">Strict quality standards to ensure consistency, durability, and performance.</p>
+              <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                View Details <span>&rarr;</span>
+              </div>
+            </div>
+          </a>
+          <a href="roofing.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
+            <div class="relative h-48 overflow-hidden bg-mute">
+              <img src="assets/images/roofing-home.jpg" alt="Modern house roof, low-angle view — Image by freepik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="flex items-center gap-3 mb-4 text-ink">
+                <i data-lucide="home" class="text-primary w-5 h-5"></i>
+                <h3 class="text-xl font-bold">JSW Roofing Solutions</h3>
+              </div>
+              <p class="text-body mb-6 flex-grow">Premium-quality roofing available in multiple profiles, colours, and thicknesses.</p>
+              <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                View Details <span>&rarr;</span>
+              </div>
+            </div>
+          </a>
+          <a href="pipes.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
+            <div class="relative h-48 overflow-hidden bg-mute">
+              <img src="assets/images/steel-pipes-1.jpg" alt="Bundled steel pipes ready for dispatch — Photo: Sắt Thép Biên Hòa, via Wikimedia Commons (CC BY-SA 4.0)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="flex items-center gap-3 mb-4 text-ink">
+                <i data-lucide="wrench" class="text-primary w-5 h-5"></i>
+                <h3 class="text-xl font-bold">JSW Tubes &amp; Pipes</h3>
+              </div>
+              <p class="text-body mb-6 flex-grow">Trusted supplies serving fabricators, contractors, builders, industries, and infrastructure developers.</p>
+              <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                View Details <span>&rarr;</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 px-6 bg-canvas-soft">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">Why Vedanga Infratech</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-ink tracking-tight">Why Choose Us</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="badge-check" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">JSW Association</h3>
+            <p class="text-sm text-body">Strong association with JSW Steel Limited.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="history" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">Decade+ Experience</h3>
+            <p class="text-sm text-body">More than a decade of industry experience.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="shield-check" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">Reliable Quality</h3>
+            <p class="text-sm text-body">Reliable product quality.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="truck" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">Timely Deliveries</h3>
+            <p class="text-sm text-body">Timely deliveries.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="users" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">Customer-Focused</h3>
+            <p class="text-sm text-body">Customer-focused approach.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="layers" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">One-Stop Solutions</h3>
+            <p class="text-sm text-body">Comprehensive steel solutions under one roof.</p>
+          </div>
+          <div class="bg-canvas rounded-xl p-6 border border-mute fade-in">
+            <i data-lucide="map-pin" class="w-7 h-7 text-primary mb-4"></i>
+            <h3 class="font-semibold text-ink mb-1">Strong Goa Presence</h3>
+            <p class="text-sm text-body">Strong presence across Goa.</p>
+          </div>
+          <div class="bg-ink rounded-xl p-6 border border-ink-light fade-in flex flex-col justify-center">
+            <p class="text-canvas-soft text-sm mb-3">Have a project in mind?</p>
+            <a href="contact.html" class="text-primary font-semibold text-sm inline-flex items-center gap-2">Talk to us <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="py-24 px-6 bg-canvas">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">Who We Serve</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-ink tracking-tight">Industries We Serve</h2>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="hard-hat" class="w-4 h-4 text-primary"></i> Construction &amp; Infrastructure</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="settings" class="w-4 h-4 text-primary"></i> Engineering &amp; Fabrication</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="factory" class="w-4 h-4 text-primary"></i> Industrial Projects</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="warehouse" class="w-4 h-4 text-primary"></i> Warehousing &amp; Logistics</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="building-2" class="w-4 h-4 text-primary"></i> Commercial Buildings</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Residential Projects</span>
+          <span class="inline-flex items-center gap-2 bg-canvas-soft border border-mute rounded-full px-5 py-3 text-ink font-medium"><i data-lucide="cog" class="w-4 h-4 text-primary"></i> Manufacturing Sector</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-24 px-6 bg-canvas-soft">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">How We Work</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-ink tracking-tight">Our Process</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-canvas border border-mute flex items-center justify-center mx-auto mb-5"><i data-lucide="message-circle" class="w-7 h-7 text-primary"></i></div>
+            <h3 class="font-semibold text-ink mb-2">1. Inquiry &amp; Consultation</h3>
+            <p class="text-sm text-body">Share your requirements via call, WhatsApp, or our contact form.</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-canvas border border-mute flex items-center justify-center mx-auto mb-5"><i data-lucide="factory" class="w-7 h-7 text-primary"></i></div>
+            <h3 class="font-semibold text-ink mb-2">2. Sourcing &amp; Manufacturing</h3>
+            <p class="text-sm text-body">We manufacture or source the right JSW-grade steel products for your project.</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-canvas border border-mute flex items-center justify-center mx-auto mb-5"><i data-lucide="shield-check" class="w-7 h-7 text-primary"></i></div>
+            <h3 class="font-semibold text-ink mb-2">3. Quality Assurance</h3>
+            <p class="text-sm text-body">Every batch is checked against strict quality standards before dispatch.</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-canvas border border-mute flex items-center justify-center mx-auto mb-5"><i data-lucide="truck" class="w-7 h-7 text-primary"></i></div>
+            <h3 class="font-semibold text-ink mb-2">4. Delivery &amp; Support</h3>
+            <p class="text-sm text-body">Reliable delivery across Goa and neighbouring regions, with ongoing support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-6 bg-canvas">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-ink tracking-tight">Client Testimonials</h2>
+          <p class="text-body-mid mt-4 text-lg">What our partners say about our quality and service.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-canvas-soft rounded-xl p-8 shadow-sm border border-mute">
+            <div class="flex gap-1 text-primary mb-4">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-body mb-6 italic leading-relaxed">"Vedanga Infratech has been our go-to supplier for structural steel. Their timely deliveries and association with JSW make them incredibly reliable for large-scale projects."</p>
+            <p class="text-ink font-semibold text-sm">&mdash; Rajesh D., Infrastructure Developer</p>
+          </div>
+          <div class="bg-canvas-soft rounded-xl p-8 shadow-sm border border-mute">
+            <div class="flex gap-1 text-primary mb-4">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-body mb-6 italic leading-relaxed">"The quality of JSW roofing sheets we received for our warehouse was exceptional. Great customer support and technical guidance from the team."</p>
+            <p class="text-ink font-semibold text-sm">&mdash; Amit S., Factory Owner</p>
+          </div>
+          <div class="bg-canvas-soft rounded-xl p-8 shadow-sm border border-mute">
+            <div class="flex gap-1 text-primary mb-4">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-body mb-6 italic leading-relaxed">"We rely on Vedanga Infratech for all our MS pipe requirements. Their manufacturing consistency and precision are simply unmatched in Goa."</p>
+            <p class="text-ink font-semibold text-sm">&mdash; Priya M., Fabrication Firm</p>
+          </div>
+          <div class="bg-canvas-soft rounded-xl p-8 shadow-sm border border-mute">
+            <div class="flex gap-1 text-primary mb-4">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-body mb-6 italic leading-relaxed">"Professional, prompt, and high-quality materials. They provided end-to-end steel solutions for our new commercial complex."</p>
+            <p class="text-ink font-semibold text-sm">&mdash; Sandeep V., Contractor</p>
+          </div>
+          <div class="bg-canvas-soft rounded-xl p-8 shadow-sm border border-mute">
+            <div class="flex gap-1 text-primary mb-4">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-body mb-6 italic leading-relaxed">"As a fabrication business, finding a reliable partner is tough. Vedanga Infratech delivers on every promise with competitive pricing."</p>
+            <p class="text-ink font-semibold text-sm">&mdash; Kiran K., Engineer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="py-20 px-6 bg-primary text-white text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-display tracking-tight">Let's Build Something Strong Together</h2>
+        <p class="text-white/90 mb-8 text-lg">Reach out for a quote on manufacturing, roofing, or pipes &amp; tubes — our team responds promptly.</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-ink hover:bg-ink-light text-white px-8 py-3.5 rounded-xl font-semibold transition-colors">
+          Get a Quote <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-ink text-canvas pt-16 pb-8 border-t border-ink-light">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/icons/logo-192.png" alt="Vedanga Infratech logo" class="w-10 h-10" />
+          <span class="font-display font-bold text-xl tracking-tight uppercase">Vedanga Infratech</span>
+        </a>
+        <p class="text-canvas-soft opacity-80 mb-6 max-w-sm text-sm leading-relaxed">
+          Goa's trusted manufacturing partner and distributor for JSW Steel Limited. Building strength, delivering trust since 2012.
+        </p>
+        <div class="flex flex-col gap-2">
+          <a href="tel:8408809782" class="inline-flex items-center gap-2 text-canvas-soft text-sm hover:text-primary transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i> +91 8408809782
+          </a>
+          <a href="mailto:info@vedangainfratech.in" class="inline-flex items-center gap-2 text-canvas-soft text-sm hover:text-primary transition-colors">
+            <i data-lucide="mail" class="w-4 h-4"></i> info@vedangainfratech.in
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-6 tracking-wide">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="index.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">About Us</a></li>
+          <li><a href="businesses.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Businesses</a></li>
+          <li><a href="contact.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-6 tracking-wide">Legal</h3>
+        <ul class="space-y-3">
+          <li><a href="terms.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 md:pr-24">
+      <p class="text-canvas-soft opacity-60 text-sm">&copy; <span id="year"></span> Vedanga Infratech. All rights reserved.</p>
+      <p class="text-canvas-soft opacity-60 text-sm">Website Designed by <a href="https://zoloinnovations.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Zolo Innovations</a></p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-40">
+    <a href="tel:8408809782" class="w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center shadow-lg hover:bg-primary-hover transition-transform hover:-translate-y-1" aria-label="Call Us">
+      <i data-lucide="phone" class="w-6 h-6"></i>
+    </a>
+    <button id="scroll-top-btn" class="w-14 h-14 bg-ink text-white rounded-xl flex items-center justify-center shadow-lg hover:bg-ink-light transition-all" aria-label="Scroll to top">
+      <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

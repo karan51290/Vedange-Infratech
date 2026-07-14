@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #e84e1b;
+  --color-primary-hover: #cf4518;
+  --color-ink: #201515;
+  --color-ink-light: #36342e;
+  --color-body: #605d52;
+  --color-body-mid: #939084;
+  --color-canvas: #fffefb;
+  --color-canvas-soft: #f8f4f0;
+  --color-mute: #c5c0b1;
+
+  /* New accent, sourced from the physical ACP board / color reference PDF.
+     Used only for new sections (stats band, industries band) — the original
+     palette above is unchanged. */
+  --color-navy: #00325f;
+  --color-navy-light: #0a4a86;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-body);
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink);
+  border-radius: 4px;
+}
+
+/* ---- Header show/hide on scroll (class toggled by main.js) ---- */
+#site-header {
+  transition: transform 300ms ease;
+}
+#site-header.header-hidden {
+  transform: translateY(-100%);
+}
+
+/* ---- Simple fade/slide-in utility (replaces the tailwindcss-animate
+   plugin the React build used; applied via IntersectionObserver in main.js) ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Mobile nav ---- */
+#mobile-nav {
+  display: none;
+}
+#mobile-nav.is-open {
+  display: block;
+}
+
+/* ---- Scroll-to-top button ---- */
+#scroll-top-btn {
+  opacity: 0;
+  transform: translateY(2.5rem);
+  pointer-events: none;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+#scroll-top-btn.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ---- FAQ accordion ---- */
+.faq-answer {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+.faq-chevron {
+  transition: transform 200ms ease;
+}
+
+/* ---- Prose (legal pages) ---- */
+.prose h3 {
+  color: var(--color-ink);
+}
+.prose p {
+  line-height: 1.75;
+}
