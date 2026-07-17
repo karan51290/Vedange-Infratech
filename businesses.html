@@ -4,27 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Businesses | Vedanga Infratech</title>
-  <meta name="description" content="Explore Vedanga Infratech's three core businesses: steel manufacturing, JSW roofing solutions, and JSW tubes & pipes distribution across Goa." />
+  <meta name="description" content="Explore Vedanga Infratech's three core businesses: scaffolding goods & accessories, steel tubes & pipes, and roofing sheets, manufactured in Goa and supplied globally." />
   <link rel="icon" type="image/png" href="assets/icons/favicon-32.png" />
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/js/tailwind-config.js"></script>
-  <link rel="canonical" href="https://www.vedangainfratech.in/businesses.html" />
+  <link rel="canonical" href="https://vedangainfratech.co.in/businesses.html" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Vedanga Infratech" />
   <meta property="og:title" content="Our Businesses | Vedanga Infratech" />
-  <meta property="og:description" content="Explore Vedanga Infratech's three core businesses: steel manufacturing, JSW roofing solutions, and JSW tubes & pipes distribution across Goa." />
-  <meta property="og:url" content="https://www.vedangainfratech.in/businesses.html" />
-  <meta property="og:image" content="https://www.vedangainfratech.in/assets/icons/logo-512.png" />
+  <meta property="og:description" content="Explore Vedanga Infratech's three core businesses: scaffolding goods & accessories, steel tubes & pipes, and roofing sheets, manufactured in Goa and supplied globally." />
+  <meta property="og:url" content="https://vedangainfratech.co.in/businesses.html" />
+  <meta property="og:image" content="https://vedangainfratech.co.in/assets/icons/logo-512.png" />
   <meta property="og:locale" content="en_IN" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Our Businesses | Vedanga Infratech" />
-  <meta name="twitter:description" content="Explore Vedanga Infratech's three core businesses: steel manufacturing, JSW roofing solutions, and JSW tubes & pipes distribution across Goa." />
-  <meta name="twitter:image" content="https://www.vedangainfratech.in/assets/icons/logo-512.png" />
+  <meta name="twitter:description" content="Explore Vedanga Infratech's three core businesses: scaffolding goods & accessories, steel tubes & pipes, and roofing sheets, manufactured in Goa and supplied globally." />
+  <meta name="twitter:image" content="https://vedangainfratech.co.in/assets/icons/logo-512.png" />
 
   <link rel="manifest" href="assets/icons/site.webmanifest" />
 </head>
@@ -36,10 +36,22 @@
         <img src="assets/icons/logo-192.png" alt="Vedanga Infratech logo" class="w-10 h-10 transition-transform group-hover:scale-105" />
         <span class="font-display font-bold text-2xl text-ink tracking-tight uppercase">Vedanga Infratech</span>
       </a>
-      <nav class="hidden md:flex gap-8">
+      <nav class="hidden md:flex gap-8 items-center">
         <a href="index.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">Home</a>
         <a href="about.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">About Us</a>
         <a href="businesses.html" class="text-sm font-medium transition-colors text-primary" aria-current="page">Businesses</a>
+        <div class="relative group">
+          <button type="button" class="flex items-center gap-1 text-sm font-medium transition-colors text-ink hover:text-primary">
+            Our Process <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 top-full pt-3 hidden group-hover:block z-50">
+            <div class="bg-canvas border border-mute rounded-xl shadow-lg py-2 w-64">
+              <a href="process-scaffolding.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Scaffolding Goods Process</a>
+              <a href="process-pipes.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Tubes &amp; Pipes Process</a>
+              <a href="process-roofing.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Roofing Sheets Process</a>
+            </div>
+          </div>
+        </div>
         <a href="contact.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">Contact Us</a>
       </nav>
       <button id="menu-toggle" class="md:hidden p-2 text-ink" aria-label="Toggle menu" aria-expanded="false">
@@ -52,6 +64,14 @@
         <a href="index.html" class="text-ink font-medium px-2 py-1">Home</a>
         <a href="about.html" class="text-ink font-medium px-2 py-1">About Us</a>
         <a href="businesses.html" class="text-primary font-medium px-2 py-1">Businesses</a>
+        <div class="px-2 py-1">
+          <span class="block text-ink font-medium mb-2">Our Process</span>
+          <div class="flex flex-col gap-2 pl-3 border-l-2 border-mute">
+            <a href="process-scaffolding.html" class="text-body-mid text-sm hover:text-primary">Scaffolding Goods Process</a>
+            <a href="process-pipes.html" class="text-body-mid text-sm hover:text-primary">Tubes &amp; Pipes Process</a>
+            <a href="process-roofing.html" class="text-body-mid text-sm hover:text-primary">Roofing Sheets Process</a>
+          </div>
+        </div>
         <a href="contact.html" class="text-ink font-medium px-2 py-1">Contact Us</a>
       </nav>
     </div>
@@ -62,39 +82,24 @@
     <section class="pt-8 pb-20 px-6 bg-canvas">
       <div class="max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">What We Do</span>
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">Dependable Service Globally</span>
           <h1 class="text-4xl md:text-5xl font-bold text-ink mb-6 tracking-tight">Our Core Businesses</h1>
           <p class="text-lg text-body-mid">
-            Vedanga Infratech combines modern manufacturing capabilities with a strong distribution network across three verticals, delivering superior products and dependable service to the Goa region.
+            Vedanga Infratech combines modern manufacturing capabilities with a rapidly expanding Pan-India presence, delivering superior scaffolding goods &amp; accessories, steel tubes &amp; pipes, and roofing sheets - with dependable service globally.
           </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <a href="manufacturing.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
+          <a href="scaffolding.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
             <div class="relative h-48 overflow-hidden bg-mute">
-              <img src="assets/images/manufacturing-home.jpg" alt="Industrial worker melting metal at a steel factory — Image by wirestock on Magnific" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="assets/images/construction-site-1.jpg" alt="Structural steel erected during warehouse construction, representative of our scaffolding goods (temporary - replace before launch) - Photo: tyrrellhistoricallibrary, via Wikimedia Commons (no known copyright restrictions)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
             <div class="p-8 flex flex-col flex-grow">
               <div class="flex items-center gap-3 mb-4 text-ink">
-                <i data-lucide="factory" class="text-primary w-5 h-5"></i>
-                <h2 class="text-xl font-bold">Manufacturing</h2>
+                <i data-lucide="hard-hat" class="text-primary w-5 h-5"></i>
+                <h2 class="text-xl font-bold">Scaffolding Goods &amp; Accessories</h2>
               </div>
-              <p class="text-body mb-6 flex-grow">Strict quality standards to ensure consistency, durability, and performance.</p>
-              <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                View Details <span>&rarr;</span>
-              </div>
-            </div>
-          </a>
-          <a href="roofing.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
-            <div class="relative h-48 overflow-hidden bg-mute">
-              <img src="assets/images/roofing-home.jpg" alt="Modern house roof, low-angle view — Image by freepik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-8 flex flex-col flex-grow">
-              <div class="flex items-center gap-3 mb-4 text-ink">
-                <i data-lucide="home" class="text-primary w-5 h-5"></i>
-                <h2 class="text-xl font-bold">JSW Roofing Solutions</h2>
-              </div>
-              <p class="text-body mb-6 flex-grow">Premium-quality roofing available in multiple profiles, colours, and thicknesses.</p>
+              <p class="text-body mb-6 flex-grow">Props, Acro Spans, Shuttering Plates, Cuplock Scaffolding, Couplers, and general structural accessories.</p>
               <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
                 View Details <span>&rarr;</span>
               </div>
@@ -102,14 +107,29 @@
           </a>
           <a href="pipes.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
             <div class="relative h-48 overflow-hidden bg-mute">
-              <img src="assets/images/steel-pipes-1.jpg" alt="Bundled steel pipes ready for dispatch — Photo: Sắt Thép Biên Hòa, via Wikimedia Commons (CC BY-SA 4.0)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="assets/images/steel-pipes-1.jpg" alt="Bundled steel pipes ready for dispatch - Photo: Sắt Thép Biên Hòa, via Wikimedia Commons (CC BY-SA 4.0)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
             <div class="p-8 flex flex-col flex-grow">
               <div class="flex items-center gap-3 mb-4 text-ink">
                 <i data-lucide="wrench" class="text-primary w-5 h-5"></i>
-                <h2 class="text-xl font-bold">JSW Tubes &amp; Pipes</h2>
+                <h2 class="text-xl font-bold">Steel Tubes &amp; Pipes</h2>
               </div>
-              <p class="text-body mb-6 flex-grow">Trusted supplies serving fabricators, contractors, builders, industries, and infrastructure developers.</p>
+              <p class="text-body mb-6 flex-grow">Round Section Pipes, Square Section Pipes, and Rectangular Section Pipes for fabricators, contractors, and infrastructure developers.</p>
+              <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                View Details <span>&rarr;</span>
+              </div>
+            </div>
+          </a>
+          <a href="roofing.html" class="group flex flex-col bg-canvas-soft rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-mute hover:border-primary/50">
+            <div class="relative h-48 overflow-hidden bg-mute">
+              <img src="assets/images/roofing-home.jpg" alt="Modern house roof, low-angle view - Image by freepik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="flex items-center gap-3 mb-4 text-ink">
+                <i data-lucide="home" class="text-primary w-5 h-5"></i>
+                <h2 class="text-xl font-bold">Roofing Sheets</h2>
+              </div>
+              <p class="text-body mb-6 flex-grow">Premium Galvalume color-coated sheets available in multiple profiles, colours, and thicknesses.</p>
               <div class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
                 View Details <span>&rarr;</span>
               </div>
@@ -137,19 +157,19 @@
             </thead>
             <tbody class="divide-y divide-mute">
               <tr>
-                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">Manufacturing</td>
-                <td class="px-6 py-5">Hollow Sections, MS Tubes, GP Pipes, Structural Steel Components</td>
-                <td class="px-6 py-5">Fabricators, contractors, industrial projects</td>
+                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">Scaffolding Goods &amp; Accessories</td>
+                <td class="px-6 py-5">Props, Acro Spans, Shuttering Plates, Cuplock Scaffolding, Couplers &amp; Accessories</td>
+                <td class="px-6 py-5">Fabricators, contractors, infrastructure projects</td>
               </tr>
               <tr>
-                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">JSW Roofing Solutions</td>
-                <td class="px-6 py-5">Roofing sheets in multiple profiles, colours &amp; thicknesses</td>
-                <td class="px-6 py-5">Residential, industrial sheds, warehouses, commercial complexes</td>
-              </tr>
-              <tr>
-                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">JSW Tubes &amp; Pipes</td>
-                <td class="px-6 py-5">Hollow Sections, MS Pipes, GP Pipes, Structural Tubes</td>
+                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">Steel Tubes &amp; Pipes</td>
+                <td class="px-6 py-5">Round Section Pipes, Square Section Pipes, Rectangular Section Pipes</td>
                 <td class="px-6 py-5">Fabricators, contractors, builders, industries</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-5 font-semibold text-ink whitespace-nowrap">Roofing Sheets</td>
+                <td class="px-6 py-5">Color Coated Sheets, Galvalume Color Coated Sheets</td>
+                <td class="px-6 py-5">Residential sheds, industrial sheds, warehouses, commercial complexes</td>
               </tr>
             </tbody>
           </table>
@@ -157,60 +177,52 @@
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="py-24 px-6 bg-canvas">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-14">
-          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">Questions</span>
-          <h2 class="text-4xl font-bold text-ink tracking-tight">Frequently Asked Questions</h2>
+    <!-- Our Process -->
+    <section class="pt-16 pb-24 px-6 bg-canvas-soft">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="uppercase tracking-[0.1em] text-sm font-semibold text-primary mb-4 block">How We Work</span>
+          <h2 class="text-4xl font-bold text-ink tracking-tight">Our Process</h2>
         </div>
-
-        <div class="space-y-4">
-          <div class="faq-item border border-mute rounded-xl bg-canvas-soft overflow-hidden">
-            <button class="faq-question w-full flex items-center justify-between text-left px-6 py-5 font-semibold text-ink" aria-expanded="false">
-              What products does Vedanga Infratech manufacture and distribute?
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-primary shrink-0"></i>
-            </button>
-            <div class="faq-answer px-6 text-body">
-              <p class="pb-5">We manufacture hollow sections, MS tubes, GP pipes, and structural steel components, and distribute JSW roofing sheets and JSW tubes &amp; pipes for the Goa region.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div class="fade-in">
+            <div class="w-16 h-16 mx-auto rounded-full bg-canvas border border-mute flex items-center justify-center mb-5">
+              <i data-lucide="message-circle" class="w-6 h-6 text-primary"></i>
             </div>
+            <h3 class="font-semibold text-ink mb-2">1. Inquiry &amp; Consultation</h3>
+            <p class="text-sm text-body">Share your requirements via call, WhatsApp, or our contact form.</p>
           </div>
-          <div class="faq-item border border-mute rounded-xl bg-canvas-soft overflow-hidden">
-            <button class="faq-question w-full flex items-center justify-between text-left px-6 py-5 font-semibold text-ink" aria-expanded="false">
-              Do you deliver across Goa and neighbouring regions?
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-primary shrink-0"></i>
-            </button>
-            <div class="faq-answer px-6 text-body">
-              <p class="pb-5">Yes. We serve infrastructure, industrial, commercial, and residential projects across Goa and neighbouring regions.</p>
+          <div class="fade-in">
+            <div class="w-16 h-16 mx-auto rounded-full bg-canvas border border-mute flex items-center justify-center mb-5">
+              <i data-lucide="package" class="w-6 h-6 text-primary"></i>
             </div>
+            <h3 class="font-semibold text-ink mb-2">2. Sourcing &amp; Manufacturing</h3>
+            <p class="text-sm text-body">We manufacture or source the right high-grade steel products for your project.</p>
           </div>
-          <div class="faq-item border border-mute rounded-xl bg-canvas-soft overflow-hidden">
-            <button class="faq-question w-full flex items-center justify-between text-left px-6 py-5 font-semibold text-ink" aria-expanded="false">
-              Can you handle large or custom orders?
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-primary shrink-0"></i>
-            </button>
-            <div class="faq-answer px-6 text-body">
-              <p class="pb-5">We work with fabricators, contractors, builders, and industries of varying scale, and can discuss customised requirements — reach out with your specifications for a quote.</p>
+          <div class="fade-in">
+            <div class="w-16 h-16 mx-auto rounded-full bg-canvas border border-mute flex items-center justify-center mb-5">
+              <i data-lucide="shield-check" class="w-6 h-6 text-primary"></i>
             </div>
+            <h3 class="font-semibold text-ink mb-2">3. Quality Assurance</h3>
+            <p class="text-sm text-body">Every batch is checked against strict quality standards before dispatch.</p>
           </div>
-          <div class="faq-item border border-mute rounded-xl bg-canvas-soft overflow-hidden">
-            <button class="faq-question w-full flex items-center justify-between text-left px-6 py-5 font-semibold text-ink" aria-expanded="false">
-              How do I request a quote?
-              <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-primary shrink-0"></i>
-            </button>
-            <div class="faq-answer px-6 text-body">
-              <p class="pb-5">Use the <a href="contact.html" class="text-primary font-semibold">contact form</a>, call us, or message us directly on WhatsApp — our team will follow up promptly with a tailored quote.</p>
+          <div class="fade-in">
+            <div class="w-16 h-16 mx-auto rounded-full bg-canvas border border-mute flex items-center justify-center mb-5">
+              <i data-lucide="truck" class="w-6 h-6 text-primary"></i>
             </div>
+            <h3 class="font-semibold text-ink mb-2">4. Delivery &amp; Support</h3>
+            <p class="text-sm text-body">Reliable delivery across Goa and neighbouring regions, with ongoing support.</p>
           </div>
         </div>
       </div>
     </section>
 
+
     <!-- CTA band -->
     <section class="py-20 px-6 bg-primary text-white text-center">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 font-display tracking-tight">Not Sure Which Solution You Need?</h2>
-        <p class="text-white/90 mb-8 text-lg">Talk to our team — we'll help you choose the right product for your project.</p>
+        <p class="text-white/90 mb-8 text-lg">Talk to our team - we'll help you choose the right product for your project.</p>
         <a href="contact.html" class="inline-flex items-center gap-2 bg-ink hover:bg-ink-light text-white px-8 py-3.5 rounded-xl font-semibold transition-colors">
           Get a Quote <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
         </a>
@@ -227,14 +239,14 @@
           <span class="font-display font-bold text-xl tracking-tight uppercase">Vedanga Infratech</span>
         </a>
         <p class="text-canvas-soft opacity-80 mb-6 max-w-sm text-sm leading-relaxed">
-          Goa's trusted manufacturing partner and distributor for JSW Steel Limited. Building strength, delivering trust since 2012.
+          Goa-based manufacturer of scaffolding goods &amp; accessories, steel tubes &amp; pipes, and roofing sheets. Building strength, delivering trust since 2012.
         </p>
         <div class="flex flex-col gap-2">
           <a href="tel:8408809782" class="inline-flex items-center gap-2 text-canvas-soft text-sm hover:text-primary transition-colors">
             <i data-lucide="phone" class="w-4 h-4"></i> +91 8408809782
           </a>
-          <a href="mailto:info@vedangainfratech.in" class="inline-flex items-center gap-2 text-canvas-soft text-sm hover:text-primary transition-colors">
-            <i data-lucide="mail" class="w-4 h-4"></i> info@vedangainfratech.in
+          <a href="mailto:info@vedangainfratech.co.in" class="inline-flex items-center gap-2 text-canvas-soft text-sm hover:text-primary transition-colors">
+            <i data-lucide="mail" class="w-4 h-4"></i> info@vedangainfratech.co.in
           </a>
         </div>
       </div>
@@ -257,7 +269,7 @@
     </div>
     <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 md:pr-24">
       <p class="text-canvas-soft opacity-60 text-sm">&copy; <span id="year"></span> Vedanga Infratech. All rights reserved.</p>
-      <p class="text-canvas-soft opacity-60 text-sm">Website Designed by <a href="https://zoloinnovations.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Zolo Innovations</a></p>
+      <p class="text-canvas-soft opacity-60 text-sm">Website Designed by <a href="https://zoloinnovations.com" target="_blank" rel="noopener noreferrer nofollow" class="hover:text-primary transition-colors">Zolo Innovations</a></p>
     </div>
   </footer>
 
