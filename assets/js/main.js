@@ -100,6 +100,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- Home hero image carousel ----
+  const heroCarousel = document.getElementById('hero-carousel');
+  const heroTrack = document.getElementById('hero-carousel-track');
+  if (heroCarousel && heroTrack) {
+    const slides = Array.from(heroCarousel.querySelectorAll('.hero-slide'));
+    const dots = Array.from(heroCarousel.querySelectorAll('.hero-carousel-dot'));
+    let activeIndex = 0;
+    let timer = null;
+
+    const showSlide = (index) => {
+      dots[activeIndex]?.classList.remove('is-active');
+      activeIndex = index;
+      heroTrack.style.transform = `translateX(-${activeIndex * 100}%)`;
+      dots[activeIndex]?.classList.add('is-active');
+    };
+
+    const startAutoplay = () => {
+      timer = window.setInterval(() => {
+        showSlide((activeIndex + 1) % slides.length);
+      }, 5000);
+    };
+
+    if (slides.length > 1) {
+      dots[0]?.classList.add('is-active');
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          showSlide(index);
+          window.clearInterval(timer);
+          startAutoplay();
+        });
+      });
+      startAutoplay();
+    }
+  }
+
   // ---- Certificate lightbox (about.html) ----
   const certLightbox = document.getElementById('cert-lightbox');
   const certLightboxImg = document.getElementById('cert-lightbox-img');

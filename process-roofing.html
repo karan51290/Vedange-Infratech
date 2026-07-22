@@ -41,6 +41,18 @@
         <a href="about.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">About Us</a>
         <a href="businesses.html" class="text-sm font-medium transition-colors text-ink hover:text-primary">Businesses</a>
         <div class="relative group">
+          <button type="button" class="flex items-center gap-1 text-sm font-medium transition-colors text-ink hover:text-primary">
+            Our Facilities <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 top-full pt-3 hidden group-hover:block z-50">
+            <div class="bg-canvas border border-mute rounded-xl shadow-lg py-2 w-64">
+              <a href="scaffolding.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Scaffolding Goods Facility</a>
+              <a href="pipes.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Tubes and Pipes Facility</a>
+              <a href="roofing.html" class="block px-4 py-2.5 text-sm text-ink hover:bg-canvas-soft hover:text-primary transition-colors">Roofing Sheets Facility</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
           <button type="button" class="flex items-center gap-1 text-sm font-medium transition-colors text-primary" aria-current="page">
             Our Process <i data-lucide="chevron-down" class="w-4 h-4"></i>
           </button>
@@ -64,6 +76,14 @@
         <a href="index.html" class="text-ink font-medium px-2 py-1">Home</a>
         <a href="about.html" class="text-ink font-medium px-2 py-1">About Us</a>
         <a href="businesses.html" class="text-ink font-medium px-2 py-1">Businesses</a>
+        <div class="px-2 py-1">
+          <span class="block text-ink font-medium mb-2">Our Facilities</span>
+          <div class="flex flex-col gap-2 pl-3 border-l-2 border-mute">
+            <a href="scaffolding.html" class="text-body-mid text-sm hover:text-primary">Scaffolding Goods Facility</a>
+            <a href="pipes.html" class="text-body-mid text-sm hover:text-primary">Tubes and Pipes Facility</a>
+            <a href="roofing.html" class="text-body-mid text-sm hover:text-primary">Roofing Sheets Facility</a>
+          </div>
+        </div>
         <div class="px-2 py-1">
           <span class="block text-primary font-medium mb-2">Our Process</span>
           <div class="flex flex-col gap-2 pl-3 border-l-2 border-mute">
@@ -98,7 +118,7 @@
             <p class="text-body leading-relaxed">Color-coated and galvalume coil is fed through our roll forming lines, profiled to spec, and cut to length &ndash; producing consistent, ready-to-install roofing sheets.</p>
           </div>
           <div class="relative rounded-xl overflow-hidden aspect-video bg-mute shadow-sm">
-            <img src="assets/images/roofing-sheets-1.jpg" alt="Corrugated iron roof on a rural outbuilding, representative of roll-formed roofing sheet profiles (temporary - replace with a dedicated roll forming machinery photo before launch) - Photo: Jonathan Thacker, via Wikimedia Commons (CC BY-SA 2.0)" class="w-full h-full object-cover" loading="lazy" />
+            <img src="assets/images/roofing-sheets-product.jpg" alt="Roll-forming machine producing color-coated corrugated roofing sheets, cut to length" class="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
@@ -122,13 +142,13 @@
   </main>
 
   <footer class="bg-ink text-canvas pt-16 pb-8 border-t border-ink-light">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-8 mb-12">
-      <div class="md:col-span-2">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:flex-wrap md:justify-between gap-8 mb-12">
+      <div class="max-w-xs">
         <a href="index.html" class="flex items-center gap-3 mb-6">
           <img src="assets/icons/logo-192.png" alt="Vedanga Infratech logo" class="w-10 h-10" />
           <span class="font-display font-bold text-xl tracking-tight uppercase">Vedanga Infratech</span>
         </a>
-        <p class="text-canvas-soft opacity-80 mb-6 max-w-sm text-sm leading-relaxed">
+        <p class="text-canvas-soft opacity-80 mb-6 text-sm leading-relaxed">
           Goa-based manufacturer of scaffolding goods &amp; accessories, steel tubes &amp; pipes, and roofing sheets. Building strength, delivering trust since 2012.
         </p>
         <div class="flex flex-col gap-2">
@@ -140,6 +160,7 @@
           </a>
         </div>
       </div>
+
       <div>
         <h3 class="font-semibold text-lg mb-6 tracking-wide">Quick Links</h3>
         <ul class="space-y-3">
@@ -149,6 +170,16 @@
           <li><a href="contact.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Contact Us</a></li>
         </ul>
       </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-6 tracking-wide">Our Facilities</h3>
+        <ul class="space-y-3">
+          <li><a href="scaffolding.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Scaffolding Goods Facility</a></li>
+          <li><a href="pipes.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Tubes and Pipes Facility</a></li>
+          <li><a href="roofing.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Roofing Sheets Facility</a></li>
+        </ul>
+      </div>
+
       <div>
         <h3 class="font-semibold text-lg mb-6 tracking-wide">Our Processes</h3>
         <ul class="space-y-3">
@@ -157,6 +188,7 @@
           <li><a href="process-roofing.html" class="text-canvas-soft text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">Roofing Sheets Process</a></li>
         </ul>
       </div>
+
       <div>
         <h3 class="font-semibold text-lg mb-6 tracking-wide">Legal</h3>
         <ul class="space-y-3">

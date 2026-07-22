@@ -80,6 +80,14 @@ body {
   pointer-events: auto;
 }
 
+/* ---- Home hero image carousel (slide, position set by main.js) ---- */
+.hero-carousel-track {
+  transition: transform 700ms ease;
+}
+.hero-carousel-dot.is-active {
+  background-color: #fff;
+}
+
 /* ---- FAQ accordion ---- */
 .faq-answer {
   max-height: 0px;
