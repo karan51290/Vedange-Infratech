@@ -100,6 +100,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- Certificate lightbox (about.html) ----
+  const certLightbox = document.getElementById('cert-lightbox');
+  const certLightboxImg = document.getElementById('cert-lightbox-img');
+  const certLightboxClose = document.getElementById('cert-lightbox-close');
+  if (certLightbox && certLightboxImg) {
+    const openCertLightbox = (src, alt) => {
+      certLightboxImg.src = src;
+      certLightboxImg.alt = alt || '';
+      certLightbox.classList.remove('hidden');
+      certLightbox.classList.add('flex');
+    };
+    const closeCertLightbox = () => {
+      certLightbox.classList.add('hidden');
+      certLightbox.classList.remove('flex');
+      certLightboxImg.src = '';
+    };
+    document.querySelectorAll('.cert-lightbox-trigger').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openCertLightbox(trigger.dataset.certImage, trigger.dataset.certAlt);
+      });
+    });
+    certLightboxClose?.addEventListener('click', closeCertLightbox);
+    certLightbox.addEventListener('click', (e) => {
+      if (e.target === certLightbox) closeCertLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCertLightbox();
+    });
+  }
+
   // ---- FAQ accordions (any page) ----
   document.querySelectorAll('.faq-item').forEach((item) => {
     const question = item.querySelector('.faq-question');
